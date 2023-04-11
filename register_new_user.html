@@ -13,8 +13,41 @@
     </h1>
     <hr>
     <p>
-        <form>
-
+        <h2>Formulario de registro</h2>
+        <form action="link" method="POST" target="_blank">
+            <label for="user_first">Nombre</label>
+            <input type="text" name="first_name" id="user_first" placeholder="Juan/María">
+            <br>
+            <label for="user_last">Apellidos</label>
+            <input type="text" name="last_name" id="user_last" placeholder="Pérez">
+            <br>
+            <label for="doc_num">Número de Documento</label>
+            <input type="number" name="dni" id="doc_num" max="99999999">
+            <br>
+            <label for="email_1">Correo electrónico</label>
+            <input type="email" name="email" id="email_1" placeholder="tu_mail@ejemplo.com">
+            <br>
+            <label for="email_2">Ingrese nuevamente su correo</label>
+            <input type="email" name="email_check" id="email_2">
+            <br>
+            <label for="age">Edad</label>
+            <input type="number" name="user_age" id="age" min="0" max="99">
+            <br>
+            <label for="birth">Fecha de nacimiento</label>
+            <input type="date" name="user_birth" id="birth" >
+            <br>
+            <label for="photo">Foto de perfil</label>
+            <input type="file" name="user_photo" id="photo">
+            <br>
+            <label for="user_choice">Elije el tipo de perfil</label>
+            <select name="user_type" id="user_choice"> Some
+                <option value="user_student">Quiero aprender</option>
+                <option value="user_teacher">Quiero enseñar</option>
+                <option value="user_both">Ambas</option>
+            </select>
+            <br>
+            <input type="submit" value="Completar registro">
+            <input type="reset" value="Limpiar formulario">
         </form>
     </p>
 
