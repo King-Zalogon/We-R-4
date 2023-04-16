@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevos usuarios - We-R-4</title>
+</head>
+<body>
+    <hr>
+    <h1 id="inicio">
+        We-R-4 - Conectando Alumnos y Profesores
+    </h1>
+    <hr>
+    <p>
+        <h2>Formulario de registro</h2>
+        <form action="link" method="POST" target="_blank">
+            <label for="user_first">Nombre</label>
+            <input type="text" name="first_name" id="user_first" placeholder="Juan/María">
+            <br>
+            <label for="user_last">Apellidos</label>
+            <input type="text" name="last_name" id="user_last" placeholder="Pérez">
+            <br>
+            <label for="doc_num">Número de Documento</label>
+            <input type="number" name="dni" id="doc_num" max="99999999">
+            <br>
+            <label for="email_1">Correo electrónico</label>
+            <input type="email" name="email" id="email_1" placeholder="tu_mail@ejemplo.com">
+            <br>
+            <label for="email_2">Ingrese nuevamente su correo</label>
+            <input type="email" name="email_check" id="email_2">
+            <br>
+            <label for="age">Edad</label>
+            <input type="number" name="user_age" id="age" min="0" max="99">
+            <br>
+            <label for="birth">Fecha de nacimiento</label>
+            <input type="date" name="user_birth" id="birth" >
+            <br>
+            <label for="photo">Foto de perfil</label>
+            <input type="file" name="user_photo" id="photo">
+            <br>
+            <label for="user_choice">Elije el tipo de perfil</label>
+            <select name="user_type" id="user_choice"> Some
+                <option value="user_student">Quiero aprender</option>
+                <option value="user_teacher">Quiero enseñar</option>
+                <option value="user_both">Ambas</option>
+            </select>
+            <br>
+            <input type="submit" value="Completar registro">
+            <input type="reset" value="Limpiar formulario">
+        </form>
+    </p>
+
+    
+    <br>
+
+    <ul>
+        Items para incluir en la barra de arriba:
+        <li><a href="html_main.html">Home</a></li>
+        <li><a href="about_us.html">Quienes somos</a></li>
+        <li><a href="prof_search.html">Buscar profesores</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+        <li><a href="register_new_user.html">Registrar nuevo usuario</a></li>
+        <li><a href="students_zone.html">Soy estudiante!</a></li>
+        <li><a href="teachers_zone.html">Quiero enseñar!</a></li>
+        <li><a href="free_resources.html">Contenido gratuito</a></li>
+        <li>Botón de Search</li>
+    </ul>
+
+
+    <hr>
+    <p>
+        Fin
+        <a href="#inicio">Volver al inicio</a>
+    </p>
+</body>
+</html>
