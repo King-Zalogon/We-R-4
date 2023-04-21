@@ -33,6 +33,10 @@ body{
     
     
 }
+.nav__li a{
+    color: #fff;
+    text-decoration: none;
+}
 
 .nav__li:hover{
     color: rgb(218, 167, 129);
