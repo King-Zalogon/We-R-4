@@ -48,3 +48,23 @@ section {
 #bienvenidos {
     text-align: center;
 }
+
+footer .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.copy {
+    font-size: 20px;
+}
+
+.sociales {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+.sociales a {
+    color: #333;
+    text-decoration: none;
+}
