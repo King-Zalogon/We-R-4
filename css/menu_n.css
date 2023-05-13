@@ -36,6 +36,7 @@ header label {
 
 .icon-menu img{
     height: 35px; 
+    filter: invert(100%);
 }
 
 .icon-menu{

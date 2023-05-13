@@ -35,8 +35,12 @@ header {
 
 .h1__header {
     float: left;
-    margin-left: -35px;
     margin-top: 4px;
+}
+
+.icon__header{
+    width: 20px;
+    
 }
 
 header .contenedor {
