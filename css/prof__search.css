@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px;
+    padding: 30px;
 }
 
 .h2__main{
@@ -17,6 +17,7 @@
     display:flex;
     width: 100%;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .seleccion div{
@@ -43,20 +44,51 @@
 .perfil{
     border-radius: 30px;
     margin: 10px;
-    border: 2px solid #000;
+    border: 2px solid #ccc;
     flex-basis: 400px;
     max-width: 400px;
     flex-grow: 1;
     flex-shrink: 1;
+    background-color: #efe;
+    text-align: center;
 }
 
 .perfil-img{
     width: 100%;
+    height: 250px;
     border-radius: 30px;
 
 }
 
-.datos{
-    padding: 5px 15px 15px 15px;
+.perfil-img:hover{
+    cursor: pointer;
 }
 
+.perfil h4{
+    text-align: center;
+    font-size: 24px;
+}
+
+.datos .descripcion{
+    color:#444; 
+}
+
+.datos p{
+    margin-top: 10px;
+}
+
+.datos b{
+    color: #006;
+}
+
+.datos{
+    padding: 0px 15px 15px 15px;
+}
+
+
+@media screen and (max-width:750px){
+    .seleccion{
+        flex-direction: column;
+        align-items: center;
+    }
+}
