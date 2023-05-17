@@ -27,4 +27,5 @@ let selectorDeProvincias = document.getElementById("provincias")
 
 console.log(selectorDeProvincias)
 for (let i of provincias){
+    selectorDeProvincias.innerHTML += `<option>${i}</option>`
 }
