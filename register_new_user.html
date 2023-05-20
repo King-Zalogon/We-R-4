@@ -8,12 +8,13 @@
     <title>Nuevos usuarios - We-R-4</title>
 </head>
 <body>
+    <script src="js\valid_form.js"></script>
     <main class="main">
-        <form action="link" method="POST" target="_blank" class="form">
+        <form action="link" method="POST" target="_blank" class="form" onsubmit="return validarFormulario()">
             <h2>Registrate en WE-R-4</h2>
             <h4>Unite para encontrar los mejores profesores o para ser uno de ellos</h4>
             <div class="nombre">
-                <label for="user_first">Nombre</label>
+                <label for="user_first">Nombres</label>
                 <input type="text" name="first_name" id="user_first" placeholder="Juan/María">
             </div>
             <div class="apellido">
