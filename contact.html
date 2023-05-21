@@ -4,42 +4,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - We-R-4</title>
+    <link rel="icon" href="icon/icon6.png">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/menu_n.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <title>Formulario de Contacto</title>
+    <style>
+        .form-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        }
+    </style>
 </head>
 <body>
-    <hr>
-    <h1 id="inicio">
-        We-R-4 - Conectando Alumnos y Profesores
-    </h1>
-    <hr>
-    <p>
-        <a href="mailto:gonzaloreydelcastillo@gmail.com?subject=Contacto We-R-4"
-        target="_blank"><img src="icon/icon_correo.png" width="60px" alt="Icono de correo electrónico"><br>
-            Contacto por e-mail
-        </a>
-    </p>
+  <header>
+    <div class="contenedor">
+        <h1 class="icon-graduation-cap h1__header">We-R-4</h1>
+        <input type="checkbox" id="menu-bar">
+        <label class="icon-menu" for="menu-bar"> </label>
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="prof_search.html">Profesores</a>
+            <a href="teachers_zone.html">Enseñar</a>
+            <a href="free_resources.html">Contenido gratuito</a>
+            <a href="contact.html">Contactanos</a>
+            <a href="register_new_user.html">Registrarte</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section id="banner" class="padding-section text-center">
+      <div style="width: 100%; min-height: 300px; padding: 1rem; background: url('images/contact.jpg') no-repeat center/cover;" class="banner-text">
+        <div aria-colspan="conetenedor">
+            
+            <div id="app" class="form-wrapper">
+              <form @submit.prevent="submitForm" class="needs-validation" novalidate>
+                <div class="form-group"> 
+                  <h2 class="banner-text" style="font-size: 45px;">Formulario de Contacto</h2>
+                  <label for="name">Nombre:</label>
+                  <input v-model="name" type="text" class="form-control" id="name" required>
+                  <div class="invalid-feedback">Por favor, ingrese su nombre.</div>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input v-model="email" type="email" class="form-control" id="email" required>
+                  <div class="invalid-feedback">Por favor, ingrese un email válido.</div>
+                </div>
+                <div class="form-group">
+                  <label for="subject">Motivo de consulta:</label>
+                  <input v-model="subject" type="text" class="form-control" id="subject" required>
+                  <div class="invalid-feedback">Por favor, ingrese el motivo de la consulta.</div>
+                </div>
+                <div class="form-group">
+                  <label for="message">Consulta:</label>
+                  <textarea v-model="message" class="form-control" id="message" required></textarea>
+                  <div class="invalid-feedback">Por favor, ingrese su consulta.</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+              <div v-if="showConfirmation" class="confirmation-popup">
+                <div class="popup-content">
+                  <h3>¡Consulta enviada!</h3>
+                  <p>Gracias por contactarnos. Pronto nos pondremos en contacto contigo.</p>
+                  <button @click="resetForm" class="btn btn-primary">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          
+            <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+            <script src="js/script.js"></script>
+
+
+        </div>
+      </div>
+    </section>
+    <section id="info">
+        <H3>Todos buscamos adquirir conocimientos que nos sirvan para desarrollarnos.</H3>
+        <div class="contenedor">
+            <div class="info-pet">
+                <img src="images/educación-online.jpeg" alt="">
+                <h4>Educación a Distancia</h4>
+            </div>
+            <div class="info-pet">
+                <img src="images/educacion-virtual.jpg" alt="">
+                <h4>Obtene una Certificación</h4>
+            </div>
+            <div class="info-pet">
+                <img src="images/U0P2mMvq_400x400.jpg" alt="">
+                <h4>Tutor-Alumno</h4>
+            </div>
+            <div class="info-pet">
+                <img src="images/depositphotos_52690275-stock-illustration-education-design.jpg" alt="">
+                <h4>Miles de Cursos</h4>
+            </div>
+
+        </div>
+
+
+    </section>
+</main>
+<footer>
+  <div class="padding-section text-center">
+      <p class="copy">We-R-4 &copy; 2023</p>
+      <div class="sociales">
+          <a class="icon-facebook" href="#"></a>
+          <a class="icon-instagram" href="#"></a>
+          <a clases="icon-linkedin" href="#"></a>
+          <a class="icon-twitter" href="#"></a>
+
+      </div>
+
+  </div>
+</footer>
+
 
     
-    <br>
-
-    <ul>
-        Items para incluir en la barra de arriba:
-        <li><a href="html_main.html">Home</a></li>
-        <li><a href="about_us.html">Quienes somos</a></li>
-        <li><a href="prof_search.html">Buscar profesores</a></li>
-        <li><a href="contact.html">Contacto</a></li>
-        <li><a href="register_new_user.html">Registrar nuevo usuario</a></li>
-        <li><a href="students_zone.html">Soy estudiante!</a></li>
-        <li><a href="teachers_zone.html">Quiero enseñar!</a></li>
-        <li><a href="free_resources.html">Contenido gratuito</a></li>
-        <li>Botón de Search</li>
-    </ul>
+  </main>
 
 
-    <hr>
-    <p>
-        Fin
-        <a href="#inicio">Volver al inicio</a>
-    </p>
 </body>
 </html>

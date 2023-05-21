@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'menu';
-  src: url('../font/menu.eot?9403624');
-  src: url('../font/menu.eot?9403624#iefix') format('embedded-opentype'),
-       url('../font/menu.woff2?9403624') format('woff2'),
-       url('../font/menu.woff?9403624') format('woff'),
-       url('../font/menu.ttf?9403624') format('truetype'),
-       url('../font/menu.svg?9403624#menu') format('svg');
+  src: url('../font/menu.eot?15850530');
+  src: url('../font/menu.eot?15850530#iefix') format('embedded-opentype'),
+       url('../font/menu.woff2?15850530') format('woff2'),
+       url('../font/menu.woff?15850530') format('woff'),
+       url('../font/menu.ttf?15850530') format('truetype'),
+       url('../font/menu.svg?15850530#menu') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'menu';
-    src: url('../font/menu.svg?9403624#menu') format('svg');
+    src: url('../font/menu.svg?15850530#menu') format('svg');
   }
 }
 */
@@ -54,9 +54,4 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.icon-graduation-cap:before { content: '\e800'; } /* '' */
 .icon-menu:before { content: '\f0c9'; } /* '' */
-.icon-twitter:before { content: '\f309'; } /* '' */
-.icon-facebook:before { content: '\f30c'; } /* '' */
-.icon-linkedin:before { content: '\f318'; } /* '' */
-.icon-instagram:before { content: '\f32d'; } /* '' */

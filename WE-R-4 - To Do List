@@ -4,47 +4,47 @@ TODO List:
 
 
 En general:
-	- Ver de agregar/sacar/cambiar los iconos que no cargan en header y footer
+	-LISTO(ELIMINADOS) Ver de agregar/sacar/cambiar los iconos que no cargan en header y footer
 
-	- Solo la pagina principal carga el file icon, agregar a las otras
+	-LISTO - Solo la pagina principal carga el file icon, agregar a las otras
 
-	- Revisar color de fondo blanco queda muy fuerte, tal vez un gris o algo acorde a la paleta que ya viene manejando el sitio que está muy bien para algo dedicado a profesionales de la enseñanza.
+	-REVISAR LUEGO Revisar color de fondo blanco queda muy fuerte, tal vez un gris o algo acorde a la paleta que ya viene manejando el sitio que está muy bien para algo dedicado a profesionales de la enseñanza.
 
-	- Ver que no se estiren las imagenes de los iconos cerca del footer.
+	- REVISAR LUEGO Ver que no se estiren las imagenes de los iconos cerca del footer. Los archivos ya están estirados, hay que cambiarlos, no es por el código.
 
-	- Mantener unidad visual, por ejemplo sacar tipitos, hacer que todos sean con tipitos o hacer los cuatro distintos
+	- REVISAR LUEGO Mantener unidad visual, por ejemplo sacar tipitos, hacer que todos sean con tipitos o hacer los cuatro distintos
 
-	- Formulario de contacto con validacion Jscript?
+	-LISTO Formulario de contacto con validacion Jscript?
 
 
 
 
 Landing Page:
-	- Centrar en landing page
-	- Agregar algo a la primera imagen que ven en la landing page (contenidos, o de que es la pagina, sales pitch "Todos los contenidos con los mejores profesionales. Justo lo que est[as necesitando, queres saber mas" Elvetica). Siendo la primera impresión que tienen hay que captar la atención rápido.
+	- LISTO Centrar en landing page
+	- LISTO Agregar algo a la primera imagen que ven en la landing page (contenidos, o de que es la pagina, sales pitch "Todos los contenidos con los mejores profesionales. Justo lo que est[as necesitando, queres saber mas" Elvetica). Siendo la primera impresión que tienen hay que captar la atención rápido.
 
 
 Profesores:
-	- Falta footer
+	- LISTO Falta footer
 
 
 Enseñar:
-	- Decir algo en la imagen inicial
-	- Cursos disponibles y demas se repiten tal cual del incio y no aplica a esta seccion
+	- LISTO Decir algo en la imagen inicial
+	- REVISAR LUEGO Cursos disponibles y demas se repiten tal cual del incio y no aplica a esta seccion
 
 
 Contenido gratuito:
-	.Por que inteligencia artificial?
-	.El "ir al curso" aparece al costado de la imagen
-	.Que el link se abra en una nueva pagina
+	.REVISAR LUEGOPor que inteligencia artificial?
+	.LISTO El "ir al curso" aparece al costado de la imagen
+	.LISTO - Que el link se abra en una nueva pagina
 
 
 Iniciar sesión:
-	.No lleva a ningun lado, tal vez podemos hacer algo como el Registrate.
+	.ELIMINADO No lleva a ningun lado, tal vez podemos hacer algo como el Registrate.
 
 
 Registrate:
-	.Ver si conviene cambiar la imagen de fondo (tal vez una biblioteca) así no tapa a la mujer, o mejor dicho, no importa su posición respecto de la imagen de fondo cuando se altera el tamaño de la pantalla.
+	.LISTO Ver si conviene cambiar la imagen de fondo (tal vez una biblioteca) así no tapa a la mujer, o mejor dicho, no importa su posición respecto de la imagen de fondo cuando se altera el tamaño de la pantalla.
 
 
 
