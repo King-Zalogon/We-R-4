@@ -1,3 +1,8 @@
+
+body{
+    background: #ddd;
+}
+
 .main__search{
     display: flex;
     flex-direction: column;
@@ -48,13 +53,14 @@
 .perfil{
     border-radius: 30px;
     margin: 10px;
-    border: 2px solid #ccc;
+    border: 2px solid #bbb;
     flex-basis: 400px;
     max-width: 400px;
     flex-grow: 1;
     flex-shrink: 1;
     background-color: #efe;
     text-align: center;
+    background: #dee;
 }
 
 .perfil-img{
