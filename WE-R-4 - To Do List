@@ -6,7 +6,7 @@ TODO List:
 En general:
 	- Ver de agregar/sacar/cambiar los iconos que no cargan en header y footer
 
-	- Solo la pagina principal carga el file icon, agregar a las otras
+	-LISTO - Solo la pagina principal carga el file icon, agregar a las otras
 
 	- Revisar color de fondo blanco queda muy fuerte, tal vez un gris o algo acorde a la paleta que ya viene manejando el sitio que está muy bien para algo dedicado a profesionales de la enseñanza.
 
@@ -36,7 +36,7 @@ Enseñar:
 Contenido gratuito:
 	.Por que inteligencia artificial?
 	.El "ir al curso" aparece al costado de la imagen
-	.Que el link se abra en una nueva pagina
+	.LISTO - Que el link se abra en una nueva pagina
 
 
 Iniciar sesión:
