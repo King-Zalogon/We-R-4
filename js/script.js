@@ -10,7 +10,7 @@ new Vue({
     methods: {
       submitForm() {
         if (this.validateForm()) {
-          // Send form data to email (replace with your email sending logic)
+          // Hey guys! We have update this part when we begin with the backend part in class for part two of TPO.
           // Example using JavaScript fetch API:
           fetch('/send-email', {
             method: 'POST',

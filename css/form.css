@@ -14,7 +14,8 @@ body{
 }
 
 .main{
-    background-image: url(../images/banner.jpg);
+    /* background-image: url(../images/banner.jpg); */
+    background-image: url(../images/register.png);
     width: 100%;
     display: flex;
     justify-content: center;
