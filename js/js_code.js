@@ -64,8 +64,8 @@ const miApp = createApp({
             <div class="datos">
                 <h4>${data["results"][0]["name"]["first"]} ${data["results"][0]["name"]["last"]}</h4>
                 <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur alias quas ea aperiam, soluta sint officiis ut? Eum aut nihil minima, suscipit, facere pariatur consequatur dolorum sequi ipsam neque sapiente illum sit aliquam deserunt veniam non, alias voluptate laboriosam ipsa odit quidem est? Laudantium adipisci, cum vero assumenda tempora placeat.</p>
-                <p class="modalidad"><b>Modalidad:</b> A distancia/presencial</p>
-                <p class="zona"><b>Zona:</b> C.A.B.A</p>
+                <p class="modalidad"><b>Modalidad:</b> A distancia</p>
+                <p class="zona"><b>Zona:</b> No especifica</p>
                 <p class="telefono"><b>Telefono:</b> 11 56369556</p>
             </div>
             

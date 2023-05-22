@@ -30,16 +30,17 @@
                 <input type="date" name="user_birth" id="birth" >
             </div>
             <div class="foto">
-                <label for="photo">Foto de perfil</label>
-                <input type="file" name="user_photo" id="photo">
+                <label>Foto de perfil</label>
+                <label id="photo__button"for="photo">Seleccione una imagen</label>
+                <input class="photo__input"type="file" name="user_photo" id="photo">
             </div>
             <div class="perfil">
                 <label for="user_choice">Elije el tipo de perfil</label>
                 <select name="user_type" id="user_choice"> Some
-                <option value="user_student">Quiero aprender</option>
-                <option value="user_teacher">Quiero enseñar</option>
-                <option value="user_both">Ambas</option>
-            </select>
+                    <option value="user_student">Quiero aprender</option>
+                    <option value="user_teacher">Quiero enseñar</option>
+                    <option value="user_both">Ambas</option>
+                </select>
             </div>
             <input type="submit" value="Completar registro" class="submit">
         </form>

@@ -95,6 +95,19 @@ body{
     padding: 0px 15px 15px 15px;
 }
 
+.show-more{
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #999;
+    background-color: #ddd;
+}
+
+.show-more:hover{
+    cursor: pointer;
+    background-color: #ccc;
+}
+
 
 @media screen and (max-width:750px){
     .seleccion{

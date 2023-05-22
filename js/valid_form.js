@@ -32,7 +32,7 @@ function validarFormulario() {
      let imagen = foto.value;
      let extenciones = /(.jpg|.jpeg|.png|.gif)$/i;
      if (!extenciones.exec(imagen)){
-        alert("Extención no admitida, por favor utilice extenciones .jpg/.jpeg/.png/.gif");
+        alert("Extensión no admitida, por favor utilice extensiones .jpg/.jpeg/.png/.gif");
         return false;
      }
      
