@@ -19,8 +19,8 @@ body{
     width: 100%;
     display: flex;
     justify-content: center;
-    background-size: percentage(100%);
-    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat ;
 }
 
 .form{

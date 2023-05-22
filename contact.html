@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/menu_n.css">
+    <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
     <title>Formulario de Contacto</title>
     <style>
         .form-wrapper {
@@ -24,7 +26,7 @@
     <div class="contenedor">
         <h1 class="icon-graduation-cap h1__header">We-R-4</h1>
         <input type="checkbox" id="menu-bar">
-        <label class="icon-menu" for="menu-bar"><img src="images/barra-lateral.png" alt="" srcset=""></label>
+        <label class="icon-menu" for="menu-bar"> </label>
         <nav class="menu">
             <a href="index.html">Inicio</a>
             <a href="prof_search.html">Profesores</a>
@@ -37,14 +39,14 @@
 </header>
 
 <main>
-    <section id="banner">
-        <img src="images/contact.jpg" alt="">
+    <section id="banner" class="padding-section text-center">
+      <div style="width: 100%; min-height: 300px; padding: 1rem; background: url('images/contact.jpg') no-repeat center/cover;" class="banner-text">
         <div aria-colspan="conetenedor">
             
             <div id="app" class="form-wrapper">
               <form @submit.prevent="submitForm" class="needs-validation" novalidate>
                 <div class="form-group"> 
-                  <h2>Formulario de Contacto</h2>
+                  <h2 class="banner-text" style="font-size: 45px;">Formulario de Contacto</h2>
                   <label for="name">Nombre:</label>
                   <input v-model="name" type="text" class="form-control" id="name" required>
                   <div class="invalid-feedback">Por favor, ingrese su nombre.</div>
@@ -80,6 +82,7 @@
 
 
         </div>
+      </div>
     </section>
     <section id="info">
         <H3>Todos buscamos adquirir conocimientos que nos sirvan para desarrollarnos.</H3>
@@ -107,17 +110,17 @@
     </section>
 </main>
 <footer>
-    <div class="contenedor">
-        <p class="copy">We-R-4 &copy; 2023</p>
-        <div class="sociales">
-            <a class="icon-facebook" href="#"></a>
-            <a class="icon-instagram" href="#"></a>
-            <a clases="icon-linkedin" href="#"></a>
-            <a class="icon-twitter" href="#"></a>
+  <div class="padding-section text-center">
+      <p class="copy">We-R-4 &copy; 2023</p>
+      <div class="sociales">
+          <a class="icon-facebook" href="#"></a>
+          <a class="icon-instagram" href="#"></a>
+          <a clases="icon-linkedin" href="#"></a>
+          <a class="icon-twitter" href="#"></a>
 
-        </div>
+      </div>
 
-    </div>
+  </div>
 </footer>
 
 
