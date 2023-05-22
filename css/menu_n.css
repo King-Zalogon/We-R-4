@@ -68,6 +68,8 @@ header label {
     
 }
 
+/* iframe style*/
+
 .iframe-wrapper {
     display: flex;
     justify-content: center;

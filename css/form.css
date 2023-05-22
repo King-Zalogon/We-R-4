@@ -79,3 +79,35 @@ form input{
     cursor: pointer;
     background:#444;
 }
+
+
+/* Coontact Form style*/
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .confirmation-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    transition: opacity 0.3s ease;
+    opacity: 1;
+  }
+  
+  .popup-content {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
