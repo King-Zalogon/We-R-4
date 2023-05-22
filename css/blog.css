@@ -12,3 +12,18 @@
     width: 100%;
     max-width: 280px;
 }
+
+#blog h4 {
+    text-align: center;
+}
+
+#blog a :hover{
+
+  background-color: brown;
+}
+
+#blog a {
+    text-decoration: none;
+    color: brown;
+    position: relative;
+}
