@@ -53,12 +53,24 @@ header {
 }
 
 .padding-section {
-    padding: 0 15ps;
+    margin-bottom: 20px;
 }
 
+.info{
+    margin-bottom: 0px;
+    padding: 10px 0;
+}
+
+.header__img{
+    position: absolute;
+    width: 45px;
+    filter: invert(100);
+    margin:5px; 
+}
 .h1__header {
     float: left;
     margin-top: 4px;
+    margin-left: 60px;
 }
 
 .icon__header{

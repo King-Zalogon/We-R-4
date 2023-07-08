@@ -1,0 +1,38 @@
+footer{
+    background-color: #222;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer__h4{
+    color: #fff; 
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.social{
+    display: flex;
+    list-style: none;
+}
+
+.social li{
+    margin: 0 5px
+}
+
+.social li img{
+    width: 30px;
+    filter: invert(90%);
+}
+
+.social li:hover{
+    margin: 0 5px;
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
