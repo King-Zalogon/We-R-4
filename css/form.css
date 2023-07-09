@@ -29,7 +29,7 @@ body{
     padding: 20px;
     background-color: #ddd;
     border-radius: 10px;
-    width: 400px;
+    width: 450px;
     background: #333;
     color:#fff; 
     display: flex;
@@ -109,6 +109,19 @@ form input{
     cursor: pointer;
     background:#444;
 }
+
+.materia{
+    display: none;
+}
+
+#descripcion{
+    width: 100%;
+    height: 150px;
+    padding: 5px;
+    
+}
+
+
 
 
 /* Coontact Form style*/

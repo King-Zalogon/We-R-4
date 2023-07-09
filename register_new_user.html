@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <title>Nuevos usuarios - We-R-4</title>
 </head>
-<body>
+<body id="app">
     <header>
         <div class="contenedor">
             <img src="images/birrete2.png" class="header__img">
@@ -30,9 +30,8 @@
             </nav>
         </div>
     </header>
-    <script src="js\valid_form.js"></script>
     <main class="main">
-        <form action="link" method="POST" target="_blank" class="form" onsubmit="return validarFormulario()">
+        <form action="link" method="POST" target="_blank" class="form" @submit="validarFormulario">
             <h2>Registrate en WE-R-4</h2>
             <h4>Unite para encontrar los mejores profesores o para ser uno de ellos</h4>
             <div class="nombre">
@@ -47,22 +46,52 @@
                 <label for="email_1">Correo electrónico</label>
                 <input type="email" name="email" id="email_1" placeholder="tu_mail@ejemplo.com">
             </div>
+            <div class="numero">
+                <label for="numero">Numero de telefono</label>
+                <input type="text" name="numero" id="numero" placeholder="114298354098">
+            </div>
             <div class="fecha-nacimiento">
                 <label for="age">Fecha de nacimiento</label>
                 <input type="date" name="user_birth" id="birth" >
             </div>
-            <div class="foto">
-                <label>Foto de perfil</label>
-                <label id="photo__button"for="photo">Seleccione una imagen</label>
-                <input class="photo__input"type="file" name="user_photo" id="photo">
+            <div>
+                <label for="photo">Foto de perfil</label>
+                <input type="text" name="user_photo" id="photo" placeholder="Introduzca una url">
             </div>
             <div class="perfil">
-                <label for="user_choice">Elije el tipo de perfil</label>
-                <select name="user_type" id="user_choice"> Some
-                    <option value="user_student">Quiero aprender</option>
-                    <option value="user_teacher">Quiero enseñar</option>
-                    <option value="user_both">Ambas</option>
+                <label for="user_choice">Elige el tipo de perfil</label>
+                <select name="user_type" id="user_perfil" v-model="perfil" @change="mostrar_materia"> 
+                    <option value="estudiante">Quiero aprender</option>
+                    <option value="profesor">Quiero enseñar</option>
+                    <option value="ambas">Ambas</option>
                 </select>
+            </div>
+            <div class="materia perfil" id="div_materia" >
+                <label for="materia">Elige una materia</label>
+                <select name="user_type" id="materia" v-model="materia" > 
+                    <option value="quimica">Quimica</option>
+                    <option value="fisica">Fisica</option>
+                    <option value="matematicas">Matematicas</option>
+                    <option value="literatura">Literatura</option>
+                    <option value="historia">Historia</option>
+                </select>
+            </div>
+            <div class="modalidad perfil">
+                <label for="modalidad">Elige la modalidad</label>
+                <select name="modalidad" id="modalidad" v-model="modalidad" @change="mostrar_provincias"> 
+                    <option value="a_distancia"> A distancia</option>
+                    <option value="presencial">Presencial</option>
+                    <option value="ambas">Ambas</option>
+                </select>
+            </div>
+            <div class="perfil provincias" id="div_provincias">
+                <label for="provincias">Selecciona tu provincia</label>
+                <select name="provincias" id="provincias" class="select">
+                </select>
+            </div>
+            <div id="div_descripcion">
+                <label for="descripcion">Introduce una descripcion</label>
+                <textarea name="descripcion" id="descripcion" style="resize:none;"></textarea>
             </div>
             <input type="submit" value="Completar registro" class="submit">
         </form>
@@ -102,4 +131,6 @@
     </footer>
 
 </body>
+    <script src="https://unpkg.com/vue@next"></script>     
+    <script src="js/valid_form.js"></script>
 </html>
