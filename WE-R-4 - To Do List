@@ -3,7 +3,7 @@ WE-R-4
 TODO List:
 
 
-En general:
+<!-- En general:
 	-LISTO(ELIMINADOS) Ver de agregar/sacar/cambiar los iconos que no cargan en header y footer
 
 	-LISTO - Solo la pagina principal carga el file icon, agregar a las otras
@@ -44,7 +44,21 @@ Iniciar sesión:
 
 
 Registrate:
-	.LISTO Ver si conviene cambiar la imagen de fondo (tal vez una biblioteca) así no tapa a la mujer, o mejor dicho, no importa su posición respecto de la imagen de fondo cuando se altera el tamaño de la pantalla.
+	.LISTO Ver si conviene cambiar la imagen de fondo (tal vez una biblioteca) así no tapa a la mujer, o mejor dicho, no importa su posición respecto de la imagen de fondo cuando se altera el tamaño de la pantalla. -->
 
 
+SEGUNDA PARTE
 
+A) Utilizar una API REST desde el backend utilizando los metodos GET, POST, PUT, DELETE
+
+B) Tener un frontend interativo que permita un CRUD con una base de datos MySQL
+
+Para API, puede ir la misma que usamos para los profesores. Si logro hacer que eso pase a la base puedo tal vez reutilizar el registro de nuevos usuarios para el CRUD.
+
+Base de Datos
+	Tablas:
+		- MATERIAS: PrimaryKey Codigo_M / Titulo
+		- PROFESORES: PrimaryKey N_Usuario / ForeignKey Codigo_M / Nombre / Apellido / eMail / Provincia
+		- ALUMNOS: PrimaryKey N_Usuario / ForeignKey Codigo_M / Nombre / Apellido / eMail
+
+		
