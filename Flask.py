@@ -126,7 +126,7 @@ class Profesores:
         cursor = conect.cursor()
         profe__existente = self.consultar_profe(email)
         if profe__existente:
-            cursor.execute("""DELETE FROM profesores WHERE email = ?""",(email,))
+            cursor.execute("""DELETE FROM profesores WHERE correoElectronico = ?""",(email,))
             if cursor.rowcount > 0:
                 conect.commit()
                 return jsonify({'mensaje': 'Profesor eliminado correctamente.'}), 200
@@ -148,16 +148,16 @@ def agregar_profesor():
     
     email = request.json.get("email")
     nombre = request.json.get("nombre")
-    apellido = request.json.get("apelllido")
+    apellido = request.json.get("apellido")
     telefono = request.json.get("telefono")
     nacimiento = request.json.get("nacimiento")
     provincia = request.json.get("provincia")
     descripcion = request.json.get("descripcion")
     materia = request.json.get("materia")
-    modalidad = request.json.get("modalidad")
-    foto = request.json.get("foto")
+    modalidad = str(request.json.get("modalidad"))
+    foto = str(request.json.get("foto"))
     
-    return profesores.agregar(nombre,apellido,email,nacimiento,provincia,descripcion,materia,foto)
+    return profesores.agregar(nombre,apellido,email,telefono,nacimiento,provincia,descripcion,materia,modalidad,foto),200
     
 @app.route("/profesores", methods = ["GET"])
 
@@ -178,6 +178,7 @@ def editar_perfil(email):
 @app.route("/profesor/<string:email>", methods = ["DELETE"])
 def eliminar(email):
     return profesores.eliminar_profesor(email)
+
 
 app.run()  
     

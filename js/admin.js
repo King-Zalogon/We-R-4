@@ -35,15 +35,13 @@ const miApp = createApp({
     
     data(){
         return{
-            main: document.querySelector(".perfiles"),
-            contador : 0
+            main: document.querySelector(".perfiles")
         }
     },
     mounted(){
         this.imagen = "imagen1.png",
         this.altura = 50
         this.main = document.querySelector(".perfiles")
-        this.contador = 0
     },
 
     methods:{
@@ -56,23 +54,22 @@ const miApp = createApp({
         },
 
         generarPerfil(){
-            fetch("http://127.0.0.1:5000/profesores")
+            fetch("https://randomuser.me/api/")
             .then(data => data.json())
             .then(data => data)
             .then(data =>{
+                console.log(data)
                 this.main.innerHTML += `<div class="perfil">
-            <img src="${data[this.contador]["foto"]}" alt="" class="perfil-img">
+            <img src="${data["results"][0]["picture"]["large"]}" alt="" class="perfil-img">
             <div class="datos">
-                <h4>${data[this.contador]["nombre"]} ${data[this.contador]["apellido"]}</h4>
-                <p class="descripcion">${data[this.contador]["descripcion"]}</p>
-                <p class="modalidad"><b>Modalidad: </b>${data[this.contador]["modalidad"]}</p>
-                <p class="modalidad"><b>Materia: </b>${data[this.contador]["materia"]}</p>
-                <p class="zona"><b>Provincia: </b>${data[this.contador]["provincia"]}</p>
-                <p class="telefono"><b>Telefono: </b>${data[this.contador]["telefono"]}</p>
+                <h4>${data["results"][0]["name"]["first"]} ${data["results"][0]["name"]["last"]}</h4>
+                <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur alias quas ea aperiam, soluta sint officiis ut? Eum aut nihil minima, suscipit, facere pariatur consequatur dolorum sequi ipsam neque sapiente illum sit aliquam deserunt veniam non, alias voluptate laboriosam ipsa odit quidem est? Laudantium adipisci, cum vero assumenda tempora placeat.</p>
+                <p class="modalidad"><b>Modalidad:</b> A distancia</p>
+                <p class="zona"><b>Zona:</b> No especifica</p>
+                <p class="telefono"><b>Telefono:</b> 11 56369556</p>
             </div>
             
         </div>`
-                this.contador += 1
             })
             
         }
