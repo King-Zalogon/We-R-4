@@ -61,6 +61,7 @@ body{
     background-color: #efe;
     text-align: center;
     background: #dee;
+    height: auto;
 }
 
 .perfil-img{
@@ -93,6 +94,12 @@ body{
 
 .datos{
     padding: 0px 15px 15px 15px;
+}
+
+.descripcion{
+    text-align: center !important;
+    width: 100%;
+    color: red;
 }
 
 .show-more{
